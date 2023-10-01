@@ -12,7 +12,7 @@ class _SplashScreenState extends State<SplashScreen> {
   waitFor3Sec() async {
     await Future.delayed(const Duration(seconds: 3));
     if (context.mounted) {
-      Navigator.of(context).push(
+      Navigator.of(context).pushReplacement(
         MaterialPageRoute(
           builder: (context) => const MainScreen(),
         ),
